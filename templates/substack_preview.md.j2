@@ -1,0 +1,26 @@
+# 2025–26 WSL Gameweek {{ round }} Preview & Predictions
+
+{{ headline }}
+
+WSL ANALYTICS
+
+{{ "%B %d, %Y" }}
+
+## 🌍 Weekend Landscape
+
+{{ body.split("{{FIXTURE_BLOCKS}}")[0] }}
+
+## Fixture-by-Fixture Preview
+
+{{ body.split("{{FIXTURE_BLOCKS}}")[1].split("{{FINAL_WORD}}")[0] }}
+
+## Final Word
+
+{{ body.split("{{FINAL_WORD}}")[1] }}
+
+---
+
+## Facts Panel
+{% for it in facts -%}
+- **{{ it.label }}:** {{ it.value }} *(source: {{ it.source }})*
+{% endfor %}

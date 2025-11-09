@@ -1,0 +1,24 @@
+# WSL 2025–26 Gameweek {{ round }} Recap: {{ headline }}
+
+WSL ANALYTICS
+
+{{ "%B %d, %Y" }}
+
+## Overview
+
+{{ body.split("{{MATCH_BLOCKS}}")[0] }}
+
+## Match-by-Match Breakdown
+
+{{ body.split("{{MATCH_BLOCKS}}")[1].split("{{FINAL_WORD}}")[0] }}
+
+## Final Word
+
+{{ body.split("{{FINAL_WORD}}")[1] }}
+
+---
+
+## Facts Panel
+{% for it in facts -%}
+- **{{ it.label }}:** {{ it.value }} *(source: {{ it.source }})*
+{% endfor %}
