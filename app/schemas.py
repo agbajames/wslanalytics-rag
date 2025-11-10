@@ -2,10 +2,8 @@
 """
 Data schemas: type-safe models for API requests/responses.
 
-Design:
 - Pydantic v2 with strict config (extra fields forbidden).
 - Clear descriptions for API docs.
-- Backwards-compatible field names for existing code.
 """
 
 from __future__ import annotations
