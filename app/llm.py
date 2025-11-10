@@ -2,7 +2,6 @@
 """
 LLM wrapper: OpenAI async client with focused retry + timeout.
 
-Why this exists:
 - Centralizes model calls.
 - Retries only transient failures (rate limits, timeouts, network hiccups).
 - Keeps defaults (temperature/tokens) in one place for consistency.
