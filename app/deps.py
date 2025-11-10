@@ -2,7 +2,7 @@
 """
 Database dependencies (Portfolio/Dev)
 -------------------------------------
-This module wires a shared asyncpg pool with **insecure TLS** to avoid local
+This module wires a shared asyncpg pool with insecure TLS to avoid local
 trust-store issues during demos. It disables certificate validation.
 
 ⚠️ Do NOT use this in production. Replace _build_ssl_context() with a
