@@ -2,7 +2,6 @@
 """
 Template rendering: thin Jinja2 wrapper for MD/TXT/YAML outputs.
 
-Design:
 - StrictUndefined -> fail fast on missing variables.
 - No autoescape (outputs are not HTML).
 - Whitespace control for clean Markdown/YAML.
