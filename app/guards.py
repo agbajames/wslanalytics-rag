@@ -8,7 +8,6 @@ reducing the risk of numeric hallucinations.
 Notes:
 - Tolerates formatting differences (commas, percent signs, rounding).
 - Understands scorelines like "3-1" or "2–2" and indexes both sides.
-- Keep the allowlist lean; it's only for obviously non-stat references.
 """
 
 from __future__ import annotations
@@ -124,7 +123,7 @@ def assert_numbers_in_facts(body: str, facts: List[Dict[str, Any]]) -> List[str]
 
     Strategy:
     - Extract scoreline numbers and plain numbers from body.
-    - Normalize and compare against an index built from facts' values.
+    - Normalise and compare against an index built from facts' values.
     - Allow a small ALLOW-set (e.g., minutes/years).
     - Output unique tokens in appearance order for easy debugging.
 

@@ -1,11 +1,11 @@
 # tools/db_check.py
 """
-Dev utility: verify Postgres connectivity + views presence.
+Dev utility: verify Postgres connectivity + check if views are present.
 - Uses certifi CA bundle (secure).
 - Prints only safe diagnostics (no secrets).
 - Optional: exits non-zero on failure for CI.
 
-Not required for running the app. Keep for contributors only.
+This is not required for running the app.
 """
 
 from __future__ import annotations
